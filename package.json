@@ -1,0 +1,26 @@
+{
+  "name": "simple-ui",
+  "version": "0.0.1",
+  "main": "index.scss",
+  "scripts": {
+    "build": "npm run clean && npm run build:css && npm run build:css",
+    "build:css": "sass --style=expanded --source-map index.scss css/index.css",
+    "build:minify": "postcss css/index.css --no-map --use autoprefixer cssnano --output css/index.min.css",
+    "start": "npm run build:css -- --watch",
+    "format": "prettier . --write",
+    "clean": "rimraf css",
+    "prepare": "husky"
+  },
+  "author": "tranxuanthanh-sk",
+  "description": "Simple CSS framework to build simple UI.",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "husky": "^9.1.7",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "sass": "^1.83.0"
+  }
+}

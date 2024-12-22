@@ -1,0 +1,36 @@
+// Colors
+$scheme-h: 205 !default;
+$scheme-s: 16% !default;
+
+$black: hsl($scheme-h, $scheme-s, 2%) !default;
+$black-light: hsl($scheme-h, $scheme-s, 4%) !default;
+$black-lighter: hsl($scheme-h, $scheme-s, 8%) !default;
+$black-lightest: hsl($scheme-h, $scheme-s, 14%) !default;
+
+$gray-darkest: hsl($scheme-h, $scheme-s, 15%) !default;
+$gray-darker: hsl($scheme-h, $scheme-s, 17%) !default;
+$gray-dark: hsl($scheme-h, $scheme-s, 19%) !default;
+$gray: hsl($scheme-h, $scheme-s, 21%) !default;
+$gray-light: hsl($scheme-h, $scheme-s, 47%) !default;
+$gray-lighter: hsl($scheme-h, $scheme-s, 62%) !default;
+$gray-lightest: hsl($scheme-h, $scheme-s, 80%) !default;
+
+$white-darker: hsl($scheme-h, $scheme-s, 84%) !default;
+$white-dark: hsl($scheme-h, $scheme-s, 94%) !default;
+$white: hsl($scheme-h, $scheme-s, 100%) !default;
+
+$red: hsl(349, 100%, 50%) !default;
+$blue: hsl(231, 100%, 60%) !default;
+$yellow: hsl(41, 100%, 53%) !default;
+$green: hsl(144, 53%, 53%) !default;
+$cyan: hsl(196, 100%, 70%) !default;
+$pink: hsl(301, 62%, 66%) !default;
+$purple: hsl(280, 60%, 40%) !default;
+
+// Text and fonts
+$family-sans-serif: "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue",
+  "Helvetica", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", ui-sans-serif, sans-serif !default;
+
+$family-monospace: "Inconsolata", "Courier New", "JetBrains Mono", "Hack", "SF Mono", "Roboto Mono",
+  "Source Code Pro", "Ubuntu Mono", ui-monospace, monospace !default;
