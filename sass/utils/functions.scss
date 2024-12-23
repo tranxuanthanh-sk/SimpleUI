@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+@function buildVarName($name, $prefix: "", $suffix: "") {
+  // @debug "Created #{v.$CSSVarPrefix}#{$prefix}#{$name}#{$suffix}";
+  @return "#{v.$CSSVarPrefix}#{$prefix}#{$name}#{$suffix}";
+}
+
+@function getVar($name, $prefix: "", $suffix: "") {
+  $varName: buildVarName($name, $prefix, $suffix);
+  @return var(#{$varName});
+}
+
+@mixin create-css-var($name, $value, $prefix: "", $suffix: "") {
+  $varName: buildVarName($name, $prefix, $suffix);
+  #{$varName}: #{$value};
+  // @debug "CSS output: #{$varName}: #{$value}";
+}
+
+@mixin create-css-vars($vars, $prefix: "", $suffix: "") {
+  @each $name, $value in $vars {
+    @include create-css-var($name, $value, $prefix, $suffix);
+  }
+}

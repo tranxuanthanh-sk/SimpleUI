@@ -153,7 +153,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -162,7 +163,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -309,5 +311,48 @@ template {
 }
 
 /* Utils */
+/* Color */
+:root {
+  --simple-ui-black: hsl(205, 16%, 2%);
+  --simple-ui-black-light: hsl(205, 16%, 4%);
+  --simple-ui-black-lighter: hsl(205, 16%, 8%);
+  --simple-ui-black-lightest: hsl(205, 16%, 14%);
+  --simple-ui-gray-darkest: hsl(205, 16%, 15%);
+  --simple-ui-gray-darker: hsl(205, 16%, 17%);
+  --simple-ui-gray-dark: hsl(205, 16%, 19%);
+  --simple-ui-gray: hsl(205, 16%, 21%);
+  --simple-ui-gray-light: hsl(205, 16%, 47%);
+  --simple-ui-gray-lighter: hsl(205, 16%, 62%);
+  --simple-ui-gray-lightest: hsl(205, 16%, 80%);
+  --simple-ui-white-darker: hsl(205, 16%, 84%);
+  --simple-ui-white-dark: hsl(205, 16%, 94%);
+  --simple-ui-white: hsl(205, 16%, 100%);
+  --simple-ui-red: hsl(349, 100%, 50%);
+  --simple-ui-blue: hsl(231, 100%, 60%);
+  --simple-ui-yellow: hsl(41, 100%, 53%);
+  --simple-ui-green: hsl(144, 53%, 53%);
+  --simple-ui-cyan: hsl(196, 100%, 70%);
+  --simple-ui-pink: hsl(301, 62%, 66%);
+  --simple-ui-purple: hsl(280, 60%, 40%);
+}
+
+/* Fonts and text */
+:root {
+  --simple-ui-font-sans: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, ui-sans-serif, sans-serif;
+  --simple-ui-font-mono: Inconsolata, Courier New, JetBrains Mono, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, ui-monospace, monospace;
+  --simple-ui-text-size-1: 3rem;
+  --simple-ui-text-size-2: 2.5rem;
+  --simple-ui-text-size-3: 2rem;
+  --simple-ui-text-size-4: 1.5rem;
+  --simple-ui-text-size-5: 1.25rem;
+  --simple-ui-text-size-6: 1rem;
+  --simple-ui-text-size-7: 0.75rem;
+  --simple-ui-font-weight-light: 300;
+  --simple-ui-font-weight-normal: 400;
+  --simple-ui-font-weight-medium: 500;
+  --simple-ui-font-weight-semibold: 600;
+  --simple-ui-font-weight-bold: 700;
+  --simple-ui-font-weight-extrabold: 800;
+}
 
 /*# sourceMappingURL=index.css.map */

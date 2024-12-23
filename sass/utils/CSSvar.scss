@@ -1,0 +1,59 @@
+@use "functions" as fn;
+@use "variables" as v;
+
+/* Color */
+:root {
+  @include fn.create-css-vars(
+    (
+      "black": #{v.$black},
+      "black-light": #{v.$black-light},
+      "black-lighter": #{v.$black-lighter},
+      "black-lightest": #{v.$black-lightest},
+
+      "gray-darkest": #{v.$gray-darkest},
+      "gray-darker": #{v.$gray-darker},
+      "gray-dark": #{v.$gray-dark},
+      "gray": #{v.$gray},
+      "gray-light": #{v.$gray-light},
+      "gray-lighter": #{v.$gray-lighter},
+      "gray-lightest": #{v.$gray-lightest},
+
+      "white-darker": #{v.$white-darker},
+      "white-dark": #{v.$white-dark},
+      "white": #{v.$white},
+
+      "red": #{v.$red},
+      "blue": #{v.$blue},
+      "yellow": #{v.$yellow},
+      "green": #{v.$green},
+      "cyan": #{v.$cyan},
+      "pink": #{v.$pink},
+      "purple": #{v.$purple},
+    )
+  );
+}
+
+/* Fonts and text */
+:root {
+  @include fn.create-css-vars(
+    (
+      "font-sans": #{v.$family-sans-serif},
+      "font-mono": #{v.$family-monospace},
+
+      "text-size-1": #{v.$size-1},
+      "text-size-2": #{v.$size-2},
+      "text-size-3": #{v.$size-3},
+      "text-size-4": #{v.$size-4},
+      "text-size-5": #{v.$size-5},
+      "text-size-6": #{v.$size-6},
+      "text-size-7": #{v.$size-7},
+
+      "font-weight-light": #{v.$weight-light},
+      "font-weight-normal": #{v.$weight-normal},
+      "font-weight-medium": #{v.$weight-medium},
+      "font-weight-semibold": #{v.$weight-semibold},
+      "font-weight-bold": #{v.$weight-bold},
+      "font-weight-extrabold": #{v.$weight-extrabold},
+    )
+  );
+}
