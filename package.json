@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.scss",
   "scripts": {
-    "build": "npm run clean && npm run build:css && npm run build:css",
+    "build": "npm run clean && npm run build:css && npm run build:minify",
     "build:css": "sass --style=expanded --source-map index.scss css/index.css",
     "build:minify": "postcss css/index.css --no-map --use autoprefixer cssnano --output css/index.min.css",
     "start": "npm run build:css -- --watch",
